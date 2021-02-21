@@ -13,7 +13,7 @@ extensions = [
 default_role = 'envvar'
 
 breathe_projects = { "dev-conf": "_build/doxygen/xml/",
-        "devlib": "_intermediate/devlib/doxygen/xml/" }
+        "devlib": "_intermediate/devlib/_build/doxygen/xml/" }
 breathe_default_project = "dev-conf"
 breathe_default_members = ('members', 'protected-members', 'undoc-members')
 

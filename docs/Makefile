@@ -42,11 +42,11 @@ prepare-man: man
 	@## End-group
 
 devlib:
-	mkdir -p _intermediate/devlib
+	mkdir -p _intermediate/devlib/_build
 	cd ../devlib/docs/; \
 		make doxygen;
 	cp ../devlib/docs/*.rst _intermediate/devlib/
-	cp -r ../devlib/docs/_build/doxygen _intermediate/devlib/
+	cp -r ../devlib/docs/_build/doxygen _intermediate/devlib/_build/
 
 mv-files:
 	mkdir -p _build/files
