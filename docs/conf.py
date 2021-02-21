@@ -29,6 +29,8 @@ exclude_patterns = ['_build', 'man', 'inc', 'Thumbs.db', '.DS_Store']
 
 todo_include_todos = True
 
+exec(open('../devlib/docs/include.py').read())
+
 # -- Options for HTML output -------------------------------------------------
 
 html_theme = 'sphinx_rtd_theme'
@@ -50,17 +52,3 @@ if os.environ.get('READTHEDOCS', False):
     subprocess.call('make prepare-man', shell=True)
     subprocess.call('make mv-files', shell=True)
     subprocess.call('make devlib', shell=True)
-
-import subprocess
-# Only uncomment this section if something is going wrong on ReadTheDocs
-
-# In the Sphinx documentation, this function is said to require three arguments.
-# But when the third one is positional, an exception is raised.
-# We don't use it anyway, so set its default value to None.
-def build_finished_handler(app, docname, source=None):
-    # Check if the correct files have been generated
-    subprocess.call('ls -Rl', shell=True)
-
-def setup(app):
-    app.connect('build-finished', build_finished_handler)
-

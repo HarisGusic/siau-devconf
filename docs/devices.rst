@@ -178,7 +178,8 @@ Atribut ``if``
 
 ----
 
-.. include:: /inc/startdetails.rst
+|startexample|
+
 .. literalinclude:: _build/files/SmartLight.json
    :language: json
    :lines: 10-14
@@ -197,8 +198,10 @@ imati parametar je od 0.0 do 100.0. Mjerna jedinica parametra je `%`.
    ograničio opseg vrijednosti koje korisnik može unijeti. Ovaj atribut se ne
    koristi prilikom implementacije uređaja na mikrokontroleru.
 
-.. include:: /inc/enddetails.rst
-.. include:: /inc/startdetails.rst
+|endcollapse|
+
+|startexample|
+
 .. literalinclude:: _build/files/SmartLight.json
    :language: json
    :lines: 6-9
@@ -217,7 +220,7 @@ Stanje omogućenosti funkcije određuje atribut ``if``. Funkcija ``turnOn`` je
 omogućena ako je podatak ``getState`` jednak ``Off``, a u suprotnom je omogućena
 funkcija ``turnOff``.
 
-.. include:: /inc/enddetails.rst
+|endcollapse|
 
 ----
 

@@ -45,7 +45,7 @@ je poslati poruku na sljedećoj temi::
 
 ----
 
-.. include:: /inc/startdetails.rst
+|startexample|
 
 Ako neki uređaj ima serijski broj `001-2340` i nalazi se u sobi
 `dnevni_boravak`, te je potrebno izvršiti funkciju:
@@ -64,7 +64,7 @@ onda će odgovarajuća tema biti::
 Poslani payload treba da sadrži ``float`` koji predstavlja zadanu vrijednost
 temperature.
 
-.. include:: /inc/enddetails.rst
+|endcollapse|
 
 ----
 
@@ -79,7 +79,7 @@ poruku na sljedećoj temi::
 
 ----
 
-.. include:: /inc/startdetails.rst
+|startexample|
 
 Ako neki uređaj ima serijski broj `001-2340` i nalazi se u sobi
 `dnevni_boravak`, a zanima nas sljedeći :ref:`podatak<data>` sa uređaja:
@@ -95,7 +95,8 @@ onda će odgovarajuća tema biti::
 
    dnevni_boravak/001-2340/getEnergyConsumption
 
-.. include:: /inc/enddetails.rst
+|endcollapse|
+
 .. raw:: html
 
    <br>
