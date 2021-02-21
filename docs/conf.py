@@ -50,28 +50,16 @@ if os.environ.get('READTHEDOCS', False):
     subprocess.call('make doxygen', shell=True)
     subprocess.call('make prepare-man', shell=True)
 
-from docutils import nodes
-from docutils.parsers.rst import Directive
+import subprocess
+# Only uncomment this section if something is going wrong on ReadTheDocs
 
-from sphinx.locale import _
-from sphinx.util.docutils import SphinxDirective
-
-class Collapse(Directive):
-    has_content = True
-    required_arguments = 0
-    optional_arguments = 1
-
-    # TODO add assertions
-    def run(self):
-        # opening = nodes.raw('',
-        #         '''
-        #         <details>
-        #         <summary><a>''' + self.arguments[0] + '</a>' +
-        #         '</summary><br>', format='html')
-        opening = nodes.raw('done','nice','hello', 'Hello thear', format='html')
-        #self.state.nested_parse(self.content, self.content_offset, opening)
-        doc_nodes = [opening]
-        return [opening]
+# In the Sphinx documentation, this function is said to require three arguments.
+# But when the third one is positional, an exception is raised.
+# We don't use it anyway, so set its default value to None.
+def build_finished_handler(app, docname, source=None):
+    # Check if the correct files have been generated
+    subprocess.call('ls -Rl', shell=True)
 
 def setup(app):
-    app.add_directive('collapse', Collapse)
+    app.connect('build-finished', build_finished_handler)
+
