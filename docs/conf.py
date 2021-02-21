@@ -46,9 +46,10 @@ if os.environ.get('READTHEDOCS', False):
     subprocess.call('chmod -R 777 ./', shell=True)
     subprocess.call('umask 000', shell=True)
 
-    subprocess.call('make mv-files', shell=True)
     subprocess.call('make doxygen', shell=True)
     subprocess.call('make prepare-man', shell=True)
+    subprocess.call('make mv-files', shell=True)
+    subprocess.call('make devlib', shell=True)
 
 import subprocess
 # Only uncomment this section if something is going wrong on ReadTheDocs
