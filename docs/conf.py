@@ -7,7 +7,8 @@ author = 'Haris Gušić, Anes Hadžić, Džana Aldžić, Medina Gračo'
 # -- General configuration ---------------------------------------------------
 
 extensions = [
-        'sphinx.ext.todo', 'breathe', 'sphinx.ext.autosectionlabel'
+        'sphinx.ext.todo', 'breathe', 'sphinx.ext.autosectionlabel',
+        'sphinx_tabs.tabs'
 ]
 
 default_role = 'envvar'

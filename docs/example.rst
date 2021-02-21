@@ -85,7 +85,7 @@ Vrijednost trenutne jačine svjetlosti.
 
 .. admonition:: Napomena
 
-   Klasa ``Device`` u generisanoj datoteci ``device.h`` će sadržavati metodu
+   Klasa ``Device`` u generisanoj datoteci `device.h` će sadržavati metodu
    ``getBrightness`` koja vraća vrijednost tipa ``float``.
 
 Korisnička konfiguracija
