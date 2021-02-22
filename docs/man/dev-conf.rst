@@ -1,6 +1,8 @@
 SYNOPSIS
 ========
 
+.. todo:: Trenutno je implementirana samo `--setup` opcija.
+
 ::
 
    dev-conf [--help|-h]

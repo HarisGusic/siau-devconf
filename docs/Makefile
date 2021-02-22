@@ -47,6 +47,8 @@ devlib:
 		make doxygen;
 	cp ../devlib/docs/*.rst _intermediate/devlib/
 	cp -r ../devlib/docs/_build/doxygen _intermediate/devlib/_build/
+	mkdir -p _build/html/devlib/doxygen
+	cp -r ../devlib/docs/_build/doxygen/html/* _build/html/devlib/doxygen/
 
 mv-files:
 	mkdir -p _build/files

@@ -32,6 +32,8 @@ todo_include_todos = True
 
 exec(open('../devlib/docs/include.py').read())
 
+tags.add('dev_conf')
+
 # -- Options for HTML output -------------------------------------------------
 
 html_theme = 'sphinx_rtd_theme'

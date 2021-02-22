@@ -19,20 +19,6 @@ Sadrži generičke operacije sa datotekama koje se koriste u projektu.
 
 .. doxygenfile:: file.h
 
-.. admonition:: Dodatno pojašnjenje
-   :class: tip
-   
-   Funkcija ``write`` treba podatke uređaja iz parametra ``data`` upisati u
-   datoteku sa putanjom ``out``, koristeći kao predložak datoteku sa putanjom
-   ``in``.
-
-   .. rubric:: Primjer korištenja:
-
-   .. code-block:: c++
-
-      Device data = jsonParseDevice("factory_device.json");
-      write(data, "device.h.in", "device.h");
-
 Datoteka `symbols.h.in`
 -----------------------
 
